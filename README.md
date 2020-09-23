@@ -7,6 +7,15 @@ A simple shell alias to create commands
 It's an alias that allows you to create another alias as a command to another command.
 Did you get it? No? Ok, take a look on how to use it.
 
+## How to install:
+
+You can install the fnfy alias using the install script:
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/dapx/fnfy/master/install.sh)"
+. ~/.functions # Load functions after install, or you can simply start a new shell session.
+```
+
 ## How to use:
 
 You can use to create any command like:
@@ -26,13 +35,18 @@ fnfy svg2png inkscape \"\$1\" -b white --export-png=\"\$2\"
 > Pay attention to escape special characters.
 > Thanks [@jvns](https://github.com/jvns) for the useful `svg2png` command!
 
-## How to install:
+## How to show functions:
 
-You can install the fnfy alias using the install script:
+Call the `fns` alias to show the functions created:
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/dapx/fnfy/master/install.sh)"
-. ~/.functions # Load functions after install, or you can simply start a new shell session.
+fns
+```
+
+You can also compose with `sort` to list all functions ordered by name:
+
+```sh
+fns | sort
 ```
 
 ## How to uninstall:
