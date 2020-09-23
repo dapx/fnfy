@@ -35,7 +35,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/dapx/fnfy/master/install.s
 . ~/.functions # Load functions after install, or you can simply start a new shell session.
 ```
 
-## How to uninstal:
+## How to uninstall:
 
 Remove the load entry from your rc file:
 
