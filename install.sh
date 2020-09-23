@@ -2,7 +2,7 @@
 rc_filename=".$(basename $SHELL)rc"
 functions_filename=".functions"
 
-fnfy_function_alias="alias fnfy='fnfy() { name=\$1; shift; echo \"alias \$name='\''\$name() { \$@; unset -f \$name }; \$name'\''\" >> ~/.functions; unset name; unset -f fnfy; . ~/.functions }; fnfy'"
+fnfy_function_alias="alias fnfy='fnfy() { name=\$1; shift; echo \"alias \$name='\''\$name() { \$@; unset -f \$name; }; \$name'\''\" >> ~/.functions; unset name; unset -f fnfy; . ~/.functions; }; fnfy'"
 
 add_text_to_file_if_not_exists() {
   text=$1

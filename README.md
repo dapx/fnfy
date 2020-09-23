@@ -48,7 +48,3 @@ And if you don't want to keep your functions:
 ```sh
 rm ~/.functions
 ```
-
-## Where it works?
-
-It does not work on `sh` and `bash`, and I only have tested on `zsh`. But I will try to make it works on `bash` and `sh` too.
