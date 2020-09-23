@@ -2,12 +2,12 @@
 
 A simple shell alias to create commands
 
-## How it works?
+## How it works
 
 It's an alias that allows you to create another alias as a command to another command.
 Did you get it? No? Ok, take a look on how to use it.
 
-## How to install:
+## How to install
 
 You can install the fnfy alias using the install script:
 
@@ -16,7 +16,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/dapx/fnfy/master/install.s
 . ~/.functions # Load functions after install, or you can simply start a new shell session.
 ```
 
-## How to use:
+## How to use
 
 You can use to create any command like:
 
@@ -35,7 +35,7 @@ fnfy svg2png inkscape \"\$1\" -b white --export-png=\"\$2\"
 > Pay attention to escape special characters.
 > Thanks [@jvns](https://github.com/jvns) for the useful `svg2png` command!
 
-## How to show functions:
+## How to show functions
 
 Call the `fns` alias to show the functions created:
 
@@ -49,7 +49,7 @@ You can also compose with `sort` to list all functions ordered by name:
 fns | sort
 ```
 
-## How to uninstall:
+## How to uninstall
 
 Remove the load entry from your rc file:
 
