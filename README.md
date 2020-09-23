@@ -18,7 +18,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/dapx/fnfy/master/install.s
 
 ## How to use
 
-You can use to create any command like:
+The syntax is very simple, first you pass the function name and after the command:
+
+```sh
+$ fnfy aliasname command and arguments
+```
+
+For example, you can use it to create any command like:
 
 ```sh
 $ fnfy saymyname echo My name
@@ -47,6 +53,14 @@ You can also compose with `sort` to list all functions ordered by name:
 
 ```sh
 fns | sort
+```
+
+## How to remove functions
+
+Call the `unfnfy` alias from any place passing the function name that you want to remove:
+
+```sh
+unfnfy aliasname
 ```
 
 ## How to uninstall
